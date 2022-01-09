@@ -1,0 +1,143 @@
+
+/* mobile and tablet */
+@media (max-width: 1023px){
+    .main{
+        width: fit-content;
+    }
+    
+   .hideon__mobiletablet{
+       display: none;
+   }
+
+   .content{
+       margin-top: 80px;
+   }
+
+   .header__main{
+      height: unset;
+   }
+
+   .header__search{
+       margin: 20px 0;
+   }
+
+   .header__search .col.l-10{
+       width: 100%;
+   }
+
+   .header__search .row{
+       flex-wrap: nowrap;
+       justify-content: unset;
+   }
+
+   .header__subnav--list{
+       display: none;
+   }
+
+   .search__cart--container{
+       right: 4px;
+   }
+
+   .search__cart--bottom{
+       position: fixed;
+       right: 0;
+       top: 80px;
+       width: 100%;
+       padding: 0 calc((100% - 644px) / 2);
+   }
+   
+   .search__cart--bottom::after{
+       display: none;
+   }
+
+   .header__sort--bar{
+        display: flex;
+    }
+
+    .footer .row{
+        justify-content: space-evenly;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .hideon__table{
+        display: none;
+    }
+}
+
+/* mobile */
+@media (max-width: 739px){
+    .hideon__mobile{
+        display: none;
+    }
+    
+    .header__search--check{
+        display: none;
+    }
+
+    .header__btn--container{
+        flex: 1;
+    }
+    
+    .search__cart--container{
+        right: 40px;
+        top: 50%;
+        transform: translateY(-20%);
+    }
+
+    .header__main{
+        height: 80px;
+    }
+
+    .header__search--right{
+        position: unset;
+    }
+
+    .search__cart--bottom{
+        position: fixed;
+        right: -20px;
+        min-width: 122vw;
+        top: 46px;
+    }
+
+    .search__input{
+        width: 100%;
+        padding-left: -2px;
+        margin-top: 64px;
+        left: -4px;
+        border-bottom: 2px solid rgba(0,0,0,0.6);
+        animation: mobileSearch linear 0.3s;
+        display: none;
+    }
+
+    #header__search--checkbox:checked ~ .search__input{
+        display: flex;
+    }
+
+    @keyframes  mobileSearch{
+        from{
+            opacity: 0;
+            margin-top: 24px;
+        }
+        to{
+            opacity: 1;
+            margin-top: 64px;
+        }
+    }
+
+    .header__search--input{
+        width: 90%;
+    }
+
+    .header__btn--container{
+        flex: unset;
+        width: 10%;
+    }
+    
+    .header__mobile--search{
+        display: block;
+    }
+}
+
+
