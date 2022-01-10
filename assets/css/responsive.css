@@ -1,10 +1,6 @@
 
 /* mobile and tablet */
-@media (max-width: 1023px){
-    .main{
-        width: fit-content;
-    }
-    
+@media (max-width: 1023px){   
    .hideon__mobiletablet{
        display: none;
    }
@@ -68,6 +64,10 @@
 
 /* mobile */
 @media (max-width: 739px){
+    .main{
+        width: 100%;
+    }
+
     .hideon__mobile{
         display: none;
     }
@@ -138,6 +138,19 @@
     .header__mobile--search{
         display: block;
     }
+/* 
+    .conent__items .grid{
+        justify-content: unset;
+        width: 50%;
+        
+    } */
+
+    .header__search--left{
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+      }
+      
 }
 
 
